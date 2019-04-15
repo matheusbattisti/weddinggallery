@@ -1,20 +1,6 @@
 from imagegallery.settings.common import *
 
-SECRET_KEY = '1bdo6#r7t$jw#i#tdzok+#_xite@dbi$+v%d-%&+gwve$8$#@f'
 
-DEBUG = True
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'djongo',
-        'NAME': 'imagegallery',
-        'HOST': "localhost",
-        'PORT': 27017, 
-        # 'USER': 'matheus',
-        # 'PASSWORD': 'This1s4H4rdPassW0rd',
-        'AUTH_SOURCE': 'admin',
-    }
-}
 
 # STATIC_URL = '/static/'
 
