@@ -70,7 +70,6 @@ pyOpenSSL==17.5.0
 pyparsing==2.2.2
 pyRFC3339==1.0
 pyrsistent==0.14.2
-python-apt==1.6.2
 python-dateutil==2.8.0
 python-debian==0.1.32
 python-decouple==3.1
