@@ -107,5 +107,4 @@ wadllib==1.3.2
 webencodings==0.5.1
 Werkzeug==0.14.1
 WTForms==2.1
-xkit==0.0.0
 zope.interface==4.3.2
