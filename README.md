@@ -1,7 +1,8 @@
 # weddinggallery
 A Wedding Gallery Project.
 
-1 - Requirements:
+# 1 - Requirements:
+
     - Python 3.6.4
     - MongoDb 4.0.5
     - Django 2.2;
@@ -13,7 +14,8 @@ A Wedding Gallery Project.
     - boto3 1.9.130
     - Pillow 5.1.0
 
-2 - How to run this application:
+# 2 - How to run this application:
+
     - Install MongoDB
     - Check if you have pip installed - sudo pip3 --version
     - If dont install it with - sudo apt-get install python3-pip
@@ -22,19 +24,19 @@ A Wedding Gallery Project.
     - Activate the venv - source venv/bin/activate
     - Install the dependencies listed in requirements with pip - pip3 install django
     - Create a .env file at the root of application with these constants and their respective values:
-        AWS_ACCESS_KEY_ID'
-        AWS_SECRET_ACCESS_KEY
-        ALLOWED_HOSTS
-        DEBUG
-        SECRET_KEY
-        DB_HOST
-        DB_NAME
+        - AWS_ACCESS_KEY_ID'
+        - AWS_SECRET_ACCESS_KEY
+        - ALLOWED_HOSTS
+        - DEBUG
+        - SECRET_KEY
+        - DB_HOST
+        - DB_NAME
     - Make migrations - python manage.py makemigrations
     - Migrate - python manage.py migrate
     - Create a super user to access the admin - python manage.py createsuperuser
     - Run the server - python manage.py runserver
 
-3 - About the application design:
+# 3 - About the application design:
 
     I've based this application on three models: Photo, Like and User
 
