@@ -15,7 +15,6 @@ colorama==0.3.7
 cryptography==2.4.2
 cycler==0.10.0
 dataclasses==0.6
-defer==1.0.6
 defusedxml==0.5.0
 distro-info==0.18
 Django==2.2
@@ -27,7 +26,6 @@ djongo==1.2.32
 docutils==0.14
 extras==1.0.0
 fixtures==3.0.0
-Flask==0.12.4
 gunicorn==19.9.0
 html5lib==1.0.1
 htmlmin==0.1.12
