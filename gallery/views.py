@@ -49,7 +49,13 @@ def MyPhotosView(request):
 @login_required
 def ApprovePhotosView(request):
     
+    current_user = request.user
+    user_id = current_user.id
+    
     photos = Photo.objects.filter(approved='no').order_by('-created_at')
+    likes = Like.objects.all()
+
+    functions.getLikedPhotos(user_id, photos, likes)
 
     return render(request, 'gallery/approve.html', {'photos': photos})
     

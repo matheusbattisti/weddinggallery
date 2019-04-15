@@ -34,8 +34,6 @@ DATABASES = {
         'ENGINE': 'djongo',
         'NAME': config('DB_NAME'),
         'HOST': config('DB_HOST'),
-        # 'USER': 'x',
-        # 'PASSWORD': 'y',
     }
 }
 
