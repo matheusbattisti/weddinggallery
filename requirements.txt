@@ -7,7 +7,6 @@ beautifulsoup4==4.6.0
 blinker==1.4
 boto3==1.9.130
 botocore==1.12.130
-Brlapi==0.6.6
 certifi==2018.11.29
 cffi==1.11.5
 chardet==3.0.4
