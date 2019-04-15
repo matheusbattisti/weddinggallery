@@ -61,7 +61,6 @@ pycparser==2.19
 pycrypto==2.6.1
 pycups==1.9.73
 pyflakes==1.6.0
-pygobject==3.26.1
 pyinotify==0.9.6
 PyJWT==1.7.1
 pymacaroons==0.13.0
