@@ -1,0 +1,27 @@
+<div class="card">
+    <div class="card-img-box" style="background-image: url( {{photo.image.url}} );"></div>
+    <div class="card-body">
+        <h5 class="card-title">{{photo.title}}</h5>
+        <p class="card-text datetaken-text">Date taken: {{photo.date_taken}}</p>
+        <p>
+            {% if photo.liked == 'yes' %}
+                <a href="{% url 'like' %}?photo_id={{ photo.id }}&liketype=dislike"><i class="far fa-thumbs-up"></i> Dislike</a> 
+            {% else %}
+                <a href="{% url 'like' %}?photo_id={{ photo.id }}&liketype=like"><i class="far fa-thumbs-up"></i> Like</a>   
+            {% endif %}
+            <span>{{photo.like_count}}</span>
+        </p>
+        {% if request.path == '/approvephotos' %}
+            <a class="approve-btn-link" href="{% url 'approve' %}?photo_id={{ photo.id }}"><button class="btn btn-success approve-btn">Approve</button></a>
+        {% endif %}
+        {% if request.path != '/' %}
+        <div class="text-center photoapproved-msg-box">
+            {% if photo.approved == 'yes' %}
+                <span class="alert alert-success">Approved</span>
+            {% else %}
+                <span class="alert alert-warning">Pending</span>
+            {% endif %}
+        </div>
+        {% endif %}
+    </div>
+</div>

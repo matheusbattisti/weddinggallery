@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}Wedding Gallery{% endblock %}
+
+{% block content %}
+    <div class="col-12 wedding-galery">
+        <h1 class="main-title">See the best photos of our wedding!</h1>
+        <div class="col-12 filter-container">
+            <span>Sort by: </span>
+            <form action="" method="GET" class="filterform">
+                <select name="filter" id="order_by" class="custom-select">
+                    <option value="latest" {% if order_by == '-date_taken'%}selected{% endif %}>Latest</option>
+                    <option value="oldest" {% if order_by == 'date_taken'%}selected{% endif %}>Oldest</option>
+                    <option value="mostlikes" {% if order_by == '-like_count'%}selected{% endif %}>Most Liked</option>
+                    <option value="lesslikes" {% if order_by == 'like_count'%}selected{% endif %}>Less Liked</option>
+                </select>
+            </form>
+        </div>
+        {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+            <li{% if message.tags %} class="alert alert-{{ message.tags }}"{% endif %}>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        {% for photo in photos %}
+            {% include 'gallery/photo_card.html' %}
+        {% endfor %}
+    </div>
+{% endblock %}

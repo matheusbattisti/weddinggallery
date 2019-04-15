@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %}Upload your photo!{% endblock %}
+
+{% block content %}
+    <h1 class="main-title">Upload your photo!</h1>
+    <p class="text-center">Send your photo and wait for approvation</p>
+    <p>{{ form.errors }}</p>
+    <div class="col-md-4 offset-md-4">
+        <form method="POST" enctype="multipart/form-data" action="">
+            {% csrf_token %}
+            {{ form|crispy }}
+            <input type="submit" value="Send Photo" class="btn btn-success">
+        </form>
+    </div>
+{% endblock %}

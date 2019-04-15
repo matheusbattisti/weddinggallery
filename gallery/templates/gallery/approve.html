@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}Photo Approval{% endblock %}
+
+{% block content %}
+    <div class="col-12 wedding-galery">
+        <h1 class="main-title">Photo Approval</h1>
+        <p class="text-center">Here you can approve photos</p>
+        {%if photos|length > 0 %}
+            {% for photo in photos %}
+                {% include 'gallery/photo_card.html' %}
+            {% endfor %}
+        {% else %}
+            <h3 class="nophotos-msg">You haven't photos to approve yet.</h3>
+        {% endif %}
+    </div>
+{% endblock %}

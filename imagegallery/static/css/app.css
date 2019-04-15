@@ -1,0 +1,138 @@
+/* general */
+body .container, .col-md-12.wedding-galery {
+    padding: 0;
+    margin-bottom: 30px;
+    min-height: 300px;
+}
+
+.wedding-galery::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* navbar */
+.navbar-brand img {
+    width: 50px;
+}
+
+.navbar {
+    border-bottom: 1px solid #CCC;
+    margin-bottom: 25px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-weight: bold;
+}
+
+/* wedding gallery */
+.main-title {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* filter */
+.filter-container {
+    border-top: 1px solid #CCC;
+    padding: 15px 0;
+    margin-bottom: 30px;
+}
+
+.filter-container span {
+    color: #333;
+}
+
+.filterform {
+    display: inline-block;
+}
+
+/* myphotos */
+.nophotos-msg {
+    margin-top: 100px;
+}
+
+/* cards */
+.wedding-galery .card {
+    width: 20%;
+    margin: 5% 2.5%;
+    margin-top: 0;
+    position: relative;
+    padding: 0;
+    float: left;
+}
+
+.card-img-box {
+    height: 150px;
+    overflow: hidden;
+    background-position: center;
+    background-size: 250px;
+}
+
+.wedding-galery .card h5 {
+    color: #333;
+}
+
+.datetaken-text {
+    font-size: 12px;
+}
+
+.approve-btn-link:hover {
+    text-decoration: none;
+}
+
+.approve-btn {
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+/* messages */
+.messages {
+    padding: 0
+}
+
+.messages li {
+    list-style: none;
+}
+
+.photoapproved-msg-box span {
+    display: block;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+/* footer */
+
+footer {
+    position: relative;
+    display: block;
+    text-align: center;
+    background-color: #FFF;
+    border-top: 1px solid #CCC;
+    height: 300px;
+    width: 100%;
+    padding: 50px;
+}
+
+footer p {
+    color: #333;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* mobile */
+
+@media only screen and (max-width: 600px) {
+    .col-12.filter-container {
+        margin-bottom: 0;
+    }
+    .wedding-galery .card {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+    .auth-card {
+        border: none;
+    }
+}

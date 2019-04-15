@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}Wedding Gallery{% endblock %}
+
+{% block content %}
+    <div class="col-12 wedding-galery">
+        <h1 class="main-title">Your Photos</h1>
+        <p class="text-center">Here you can see if your photos were approved or not</p>
+        {%if photos|length > 0 %}
+            {% for photo in photos %}
+                {% include 'gallery/photo_card.html' %}
+            {% endfor %}
+        {% else %}
+            <h3 class="nophotos-msg">You haven't sent any photos yet, send your wedding photos <a href="{% url 'upload' %}">here.</a></h3>
+        {% endif %}
+    </div>
+{% endblock %}
