@@ -45,3 +45,13 @@ A Wedding Gallery Project.
     The Like model contains two foreign keys one for the User and the other for the Photo, so its not possible to like twice the same photo because the application check if the user has already liked it, and it is also possible to dislike photos if they were liked before.
 
     And the User models is an extended version of User Django Model, I just added a field to check if the User is a guest of the wedding or no, if he is not a guest he can approve the images to be shown in the gallery, this status can only be updated by an admin. 
+    
+# 4 - Available views:
+
+    - Sign In - /login/ - user auth
+    - Sign Up - /register/ user registration
+    - Weddin Gallery - / - All approved photos
+    - My Photos - /myphotos/ - photos the user uploaded
+    - Photo Approval - /approvephotos/ - for photo approval, just accessible by the groom or bride
+    - Upload your photos! - /upload/ - view for image upload
+    - Logout - /logout/ - ends user session
