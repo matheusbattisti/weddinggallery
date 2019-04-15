@@ -32,7 +32,7 @@ ALLOWED_HOSTS = [config('ALLOWED_HOSTS')]
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
-        'NAME': 'imagegallery',
+        'NAME': config('DB_NAME'),
         'HOST': config('DB_HOST'),
         # 'USER': 'x',
         # 'PASSWORD': 'y',
