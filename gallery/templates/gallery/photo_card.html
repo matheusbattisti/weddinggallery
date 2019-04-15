@@ -3,6 +3,7 @@
     <div class="card-body">
         <h5 class="card-title">{{photo.title}}</h5>
         <p class="card-text datetaken-text">Date taken: {{photo.date_taken}}</p>
+        {% if request.path == '/' %}
         <p>
             {% if photo.liked == 'yes' %}
                 <a href="{% url 'like' %}?photo_id={{ photo.id }}&liketype=dislike"><i class="far fa-thumbs-up"></i> Dislike</a> 
@@ -11,6 +12,7 @@
             {% endif %}
             <span>{{photo.like_count}}</span>
         </p>
+        {% endif %}
         {% if request.path == '/approvephotos' %}
             <a class="approve-btn-link" href="{% url 'approve' %}?photo_id={{ photo.id }}"><button class="btn btn-success approve-btn">Approve</button></a>
         {% endif %}
