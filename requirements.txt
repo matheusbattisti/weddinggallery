@@ -1,7 +1,7 @@
 alembic==1.0.5
 argcomplete==1.8.1
 asn1crypto==0.24.0
-Babel==2.6.0
+Babel==2.9.1
 bcrypt==3.1.4
 beautifulsoup4==4.6.0
 blinker==1.4
